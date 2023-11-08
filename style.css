@@ -1,0 +1,45 @@
+button[type="submit"] {
+    background-color: rgb(6, 130, 202);
+    border: none;
+    border-radius: 10px;
+    padding: 200px 300px;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(26, 22, 22);
+    margin: 10px;
+    transition: all .2s;
+}
+
+button[type="reset"] {
+    background-color: rgb(202, 68, 6);
+    border: none;
+    border-radius: 10px;
+    padding: 200px 300px;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(26, 22, 22);
+    transition: all .2s;
+}
+
+button[type="submit"]:hover, button[type="submit"]:focus {
+    background-color: cornflowerblue;
+    transition: all .2s;
+}
+
+button[type="submit"]:active {
+    box-shadow: inset 5px 5px 10px rgb(26, 22, 22);
+}
+
+button[type="reset"]:hover {
+    background-color: rgb(240, 114, 139);
+}
+
+button[type="reset"]:active {
+    box-shadow: inset 5px 5px 10px rgb(26, 22, 22);
+}
+
+button:disabled, button:disabled:hover {
+    box-shadow: none;
+    background-color: gray;
+    cursor: not-allowed;
+}
