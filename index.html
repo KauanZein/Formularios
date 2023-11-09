@@ -8,6 +8,46 @@
 </head>
 <body>
     <form action="">
+        <fieldset>
+            <legend>Localidade:</legend>
+    
+            <label for="pais">País</label>
+            <select id="pais">
+                <option value="0">Afeganistão</option>
+                <option value="1">Argentina</option>
+                <option value="2" selected>Brasil</option>
+                <option value="3">Canada</option>
+            </select>
+    
+            <div class="controle-form">
+                <label for="selectUF">UF:</label>
+                <input list="uf" value="SP" id="selectUF">
+            </div>
+        </fieldset>
+        
+        <div class="controle-form">
+
+            <fieldset>
+                <legend>Turno:</legend>
+                
+                <input type="radio" name="turno" id="manhã">
+                <label for="manhã">Manhã</label>
+                
+                <input type="radio" name="turno" id="tarde">
+                <label for="tarde">Tarde</label>
+                
+                <input type="radio" name="turno" id="noite">
+                <label for="noite">Noite</label>
+            </fieldset>
+        </div>
+
+        <datalist id="uf">
+            <option value="AP">Amapá</option>
+            <option value="CE">Ceará</option>
+            <option value="SP">São Paulo</option>
+            <option value="TO">Tocantins</option>
+        </datalist>
+
         <div class="controle-form">
             <label for="codigo">Codigo:</label>
             <input type="text" id="codigo" value="482374579046" disable>
